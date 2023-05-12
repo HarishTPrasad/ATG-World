@@ -1,0 +1,397 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+  .element {
+    position: relative;
+    height: 300px;
+    z-index: 1;
+  }
+  
+  .element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    background-image: url(backgroung.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .textone {
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 14%;
+    font-size: 40px;
+  }
+  
+  .texttwo {
+    color: #ffffff;
+    position: absolute;
+    left: 14%;
+    top: 80%;
+    font-size: 18px;
+  }
+
+
+
+  .elementone {
+    
+    margin-top: 2%;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    margin-left: 10%;
+  margin-right: 10%;
+    
+  }
+
+  .allpost{
+
+    /* margin-left: 200px;
+    margin-right: 548px; */
+    margin-top: 1px;
+   
+   
+  }
+
+.artifoot {
+  color: black;
+  border-right: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1 ;
+}
+ .arti{
+  margin-top: 16px;
+ }
+
+ .navbar {
+  margin: 0px;
+  padding: 0px;
+ }
+
+
+.nav .nav-item .nav-link {
+  color: gray !important;
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-bottom: 1px solid #f9f9f9
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  width: 300px;
+  
+
+}
+.search{
+  padding: 7px;
+  background-color: #ebebeb;
+  border-radius: 30px;
+ 
+}
+
+
+@media (max-width:730px) {
+
+  .laptopnav{
+
+    display: none;
+
+  }
+
+  .ritems {
+    display: none;
+  }
+
+  .joinbtn {
+    display: none;
+  }
+  .filterbtn{
+    display: block;
+  }
+
+  .newjoin {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .backbtn{
+    display: block;
+    position: absolute;
+    top: 3%;
+
+  }
+
+}
+
+@media (min-width: 730px) {
+  .mobilenav{
+    display: none;
+    
+  }
+
+  .filterbtn{
+    display: none;
+  }
+  .newjoin {
+    display: none;
+  }
+  .backbtn{
+    display: none;
+  }
+
+}
+
+@media (max-width: 730px)  {
+
+  
+  .mobilenav{
+
+    display: block;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+  
+  }
+ 
+.location{
+  display: none;
+}
+
+
+}
+
+@media (min-width: 768px) {
+  .element {
+    height: 70vh;
+   
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .element {
+    height: 60vh;
+   
+  }
+  .location {
+    position: absolute;
+    left: 75%;
+    top: 93%;
+  }
+  .allpost {
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+ 
+}
+
+@media (min-width: 1200px) {
+  .element {
+    height: 50vh;
+    
+  }
+  .location {
+    position: absolute;
+    left: 75%;
+    top: 80%;
+  }
+ 
+}
+
+@media (max-width: 530px){
+
+.textone{
+  top: 40%;
+  left: 5%;
+}
+.texttwo{
+  left: 5%;
+}
+
+}
+
+.myclosebtn{
+  position: absolute;
+  top: 16%;
+  left: 71%;
+  border-radius: 20vh;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+  
+  
+  /* Styles for the form container */
+  .form-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+ 
+  }
+
+  /* Styles for the form content */
+  .form-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border: 1px solid #888;
+    width: 660px;
+    max-width: 90%;
+    overflow: hidden; 
+
+  }
+  
+
+  .form-image img{
+     
+    position: absolute;
+    left: 48%;
+    top: 32%;
+    float: left; /* Floats the image to the left */
+   
+    width: 350px; /* Adjust the width as per your requirement */
+    height: auto; /* Allows the height to adjust proportionally */
+  }
+ 
+
+  
+
+  .form-containerme {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+ 
+  }
+
+  #formcontainerme {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Styling for the form container */
+.harrymy-form-container {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -22%);
+  border-top-right-radius: 5vh;
+  border-top-left-radius: 5vh;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the form content */
+.harrymy-form-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the close button */
+.harrymy-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+
+
+.mobileformarea{
+  margin-left: 12%;
+}
